@@ -3,7 +3,7 @@ import React from 'react'
 
 import { COLORS, FONTS, SIZES, assets } from '../constants'
 
-const HomeHeader = ( {onSearch} ) => {
+const HomeHeader = ({ onSearch }) => {
   return (
     <View style={{
       backgroundColor: COLORS.primary,
@@ -61,7 +61,7 @@ const HomeHeader = ( {onSearch} ) => {
           <TextInput 
           placeholder='Suche...'
           style={{ flex: 1 }}
-          onChange={ onSearch }
+          onChangeText={ onSearch }
           />
         </View>
       </View>
