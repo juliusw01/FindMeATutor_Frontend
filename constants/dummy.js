@@ -39,7 +39,7 @@ const NFTData = [
     creator: "",
     price: 7.25,
     description:
-      "The action painter abstract expressionists were directly influenced by automatism. Pollock channelled this into producing gestural. Nulla sed velit erat vitae leo sem inceptos diam fames arcu hendrerit, quis ultrices in eleifend posuere ipsum conubia porttitor felis.",
+      "Für die Schülerinnen und Schüler ist dasFach Deutsch von grundlegender Bedeutung: Texte interessiert und verstehend lesen, ihnen weiterführende, sachgerechte Informationen entnehmen, sich mündlich undschriftlich in unterschiedlichen Situationenverständigen, verschiedene Schreibformenbeherrschen, Texte normgerecht verfassen,Kreativität entfalten, Medien einschließlichdigitaler Informations- und Kommunikationsangebote fachbezogen, reflektiert und kreativ für die eigene Kompetenzentwicklung nutzen, das sind Voraussetzungen, die für diekulturelle und gesellschaftliche Teilhabe, fürdie Vorbereitung einer beruflichen Ausbildung und für die Fortsetzung der Schullaufbahn wesentlich sind. Das Fach fördert denErwerb der grundlegenden schriftlichen undmündlichen Kommunikations- und Darstellungsfähigkeiten unter Berücksichtigung situativer Anforderungen und ihrer Gestaltungsnormen sowie unter Nutzung zeitgemäßer medialer Möglichkeiten und Werkzeuge.",
     image: assets.nft02,
     bids: [
       {

@@ -22,6 +22,7 @@ const Card = ({ data }) => {
         <Image 
           source={data.image}
           resizeMode="cover"
+          onHover
           style={{
             width: "100%",
             height: "100%",
