@@ -1,10 +1,14 @@
-import { View, Text, Image } from 'react-native'
+import { View, Text, Image, Button } from 'react-native'
 import React from 'react'
 
 import { EthPrice } from './SubInfo'
-import { COLORS, SIZES, FONTS } from '../constants'
+import { SIZES } from '../constants'
+import { InvisibleButton } from './Button'
 
-const DetailsBid = ({ bid }) => {
+const DetailsBid = ({ bid, navigation, data }) => {
+
+const name = bid.name;
+
   return (
     <View style={{
         width: "100%",
@@ -21,13 +25,11 @@ const DetailsBid = ({ bid }) => {
       />
 
       <View>
-        <Text style={{
-          fontFamily: FONTS.semiBold,
-          fontSize: SIZES.small,
-          color: COLORS.primary
-        }}>
-          Name des Tutors: {bid.name}
-        </Text>
+        <InvisibleButton
+          text={`Termin buchen mit ${bid.name}`}
+          fontSize={SIZES.font} 
+          handlePress={() => navigation.navigate("Booking", { data, bid })}
+        />
       </View>
 
       <EthPrice price={bid.price} />

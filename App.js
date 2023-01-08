@@ -6,6 +6,9 @@ import { useFonts } from "expo-font";
 
 import Home from "./screens/Home";
 import Details from "./screens/Details";
+import Booking from "./screens/Booking";
+import BookingConformation from "./screens/BookingConformation";
+import Forum from "./screens/Forum";
 
 const theme = {
   ...DefaultTheme,
@@ -38,6 +41,9 @@ const App = () => {
       >
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Details" component={Details} />
+        <Stack.Screen name="Booking" component={Booking} />
+        <Stack.Screen name="BookingConformation" component={BookingConformation} />
+        <Stack.Screen name="Forum" component={Forum} />
       </Stack.Navigator>
     </NavigationContainer>
   );

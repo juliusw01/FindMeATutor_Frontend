@@ -54,3 +54,25 @@ export const RectButton = ({ text, minWidth, fontSize, handlePress, ...props }) 
     </TouchableOpacity>
     )
   }
+
+  export const InvisibleButton = ({ text, minWidth, fontSize, handlePress, ...props }) => {
+    return (
+    <TouchableOpacity 
+        style={{
+            backgroundColor: "inherit",
+            borderRadius: SIZES.extraLarge,
+            minWidth: minWidth,
+            padding: SIZES.small,
+            ...props
+        }}
+        onPress={handlePress}
+    >
+        <Text style={{
+            fontFamily: FONTS.semiBold,
+            fontSize: fontSize,
+            color: COLORS.primary,
+            textAlign: "center"
+        }}>{ text }</Text>
+    </TouchableOpacity>
+    )
+  }
